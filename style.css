@@ -2,70 +2,95 @@
     margin: 0;padding: 0;box-sizing: border-box;
 }
 
-.container-fluid{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
+#game{
+    width: 40rem;
+    height: 45rem;
+    background-color: rgb(19, 31, 48);
+    margin: 1rem auto;
     position: relative;
-    display: flex;flex-direction: row;
 }
-#left{
-    width: 30%;
-    height: 100%;
-    display: flex;flex-direction: column;
-}
-#left input{
-    width: 95%;
-    border-radius: 7px;
-    border: none;outline: none;
-    background-color: #0d6efd;
-    height: 40px;
-}
-#tastiera{
-    width: 99%;
-    height: 37rem;
-    background-color: rgb(238, 238, 238);
-    margin: 10px -5px;
-    display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
-}
-.tasto {
-    width: 35px;height: 35px;display: flex;justify-content: center;align-items: center;background-color:#0d6efd;
-    margin: 5px;cursor: pointer;
-
-}
-.btn{
-    margin-left: -10px;
-}
-#right{
-    width: 70%;
-    height: 100%;
- 
-}
-.numbers{
-    width: 100%;
-    height: 10rem;
-    display: flex;flex-direction: row;justify-content: space-around;
-    align-items: center;
-}
-.numeriDaRicordare{
-    width: 80%;
-    height: 5rem ;
-    background-color: #0d6efd;display: flex;justify-content: center;align-items: center;
-}
-.numeroGenerato{
-    margin: 2px ;background-color: rgb(63, 9, 63);width: 40px;height: 40px;
-    font-size: 1.3rem;
-    display: flex;align-items: center;justify-content: center;color: white;
-    cursor: pointer;
-}
-.orologio{
-    width: 5rem;
-    height: 5rem;
-    background-color: #0d6efd;
-    display: flex;align-items: center;justify-content: center;border-radius: 50%;
+label{
     color: white;
 }
-.vincitore{
-    width: 95%;margin-left: 10px;
-    height: 40rem; background-color: #0d6efd;
+.timer{
+    width: 6rem;height: 6rem;position: absolute;top: 10px;right: 10px;background-color: rgb(191, 191, 241);
+    display: flex;justify-content: center;align-items: center;border-radius: 50%;flex-direction: column;
+}
+.row> h2{
+    color: white;
+}
+.input{
+    width: 90%;
+    height: auto;
+    min-height: 50px;
+    padding: 5px;
+    margin: 10px;
+}
+.boxInput{
+    width: 90%;
+    height: auto;
+    padding: 5px;
+    position: relative;
+}
+input{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    
+}
+i {
+    position: absolute;
+    top:40px;
+    left: 10px;
+    font-size: 1.5rem;
+}
+
+#numeriGenerati{
+    width: 90%;
+    margin: 10px;
+    height: auto;
+    min-height: 5rem;
+    display: flex;align-items: center;justify-content: center;
+    background-color: white;
+    position: relative;
+}
+.containerNumeri{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(191, 191, 241);
+    position: absolute;
+    display: flex;flex-direction: row; align-items: center;justify-content: center;
+    top: 0;left: 0;
+}
+.divNumero{
+    width: 35px;height: 35px;background-color: rgb(106, 0, 255);margin: 3px;display: flex;align-items: center;justify-content: center;border-radius: 5px;
+}
+.divNumero span{
+    color: white;font-size: 0.9rem;
+}
+
+#genera{
+    margin-left: 10px;
+}
+.risultato{
+    width: 90%;
+    height: 15rem;background-color: white;border-radius: 6px;padding: 5px;
+    margin: 10px;
+}
+.inserisciNumeri{
+    position: relative;
+    width: 90%;
+    height:5rem ;
+     position: absolute;
+     bottom: 10px;left: 10px;
+     display: flex;align-items: center;
+     flex-direction: column;
+    
+}
+#verifica{
+    position: absolute;right: 5px;height: 2rem;
+    top: 34%;width: 5rem;border: none;outline: none;background-color: dodgerblue;border-radius: 6px;
 }

@@ -9,39 +9,47 @@
     <title>Simon's Sais</title>
 </head>
 <body>
-  <div class="container-fluid">
-   
-      <section id="left">
-       <label for="">livello difficoltà numeri da ricordare</label>
-       <span>Facile:5 numeri Medio:10 numeri Difficile:20</span>
-       <input type="text" name="" id="difficoltaNumeri">
+     <div class="container-fluid">
+        <div id="game">
+            <div class="timer">
+                <h2 id="time">0</h2>
+                <span>Timer</span>
+            </div>
+            <div class="row">
+                <h2>Simon-Says memory Game</h2>
+            </div>
+            <div class="input">
+                <div class="boxInput">
+                    <label for="">difficoltà tempo</label><br>
+                    <i class="fa-regular fa-clock"></i>   <input  type="text" placeholder="inserisci facile per 30 secondi medio 20 difficile 10" id="secondi">
+                </div>
+                <div class="boxInput">
+                    <label for="">difficoltà numeri</label><br>
+                    <i class="fa-solid fa-list-ol"></i>  <input type="text" placeholder="inserisci facile per 5 numeri medio 10 difficile 16" id="numeri">
+                </div>
+            </div>
+            
+            <div id="numeriGenerati">
+                <h4>Numeri nascosti</h4>
+                <div class="containerNumeri">
 
-       <label for="">livello difficoltà secondi per memorizzare i numeri</label>
-       <span>Facile:30 secondi Medio 20 secondi Difficile 10 secondi</span>
-       <input type="text" name="" id="difficoltaSecondi">
-       <div id="tastiera">
-        
-       </div>
-       <button type="button" class="btn btn-primary btn-lg" id="gioca">Gioca</button>
-      </section>
+                </div>
+            </div>
+            <button  type="button" class="btn btn-primary" id="genera">genera i tuoi numeri da ricordare</button>
 
+            <div class="risultato">
+               <p id="results">
 
-      <section id="right">
-           <div class="numbers">
-                 <div class="numeriDaRicordare">
-                    
-                 </div>
-                 <div class="orologio">
-                    <h2 id="clock">0</h2>
-                 </div>
-           </div>
-           <div class="vincitore">
-               <p id="vittoria"></p>
-           </div>
-      </section>
-   
-  </div>
-    
+               </p>
+            </div>
+
+            <div class="inserisciNumeri">
+                <label style="color: white;" for="">inserisci nel campo qua sotto tutti i numeri che ricordi  o pensi di ricordare </label>
+                <input type="text" placeholder="inserisci i numeri che ricordi separati da uno spazio" id="num">
+                <button id="verifica">Gioca</button>
+            </div>
+        </div>
+     </div>
 
     <script src="main.js"></script>
 </body>
