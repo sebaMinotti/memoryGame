@@ -1,0 +1,71 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    display: flex;flex-direction: row;
+}
+#left{
+    width: 30%;
+    height: 100%;
+    display: flex;flex-direction: column;
+}
+#left input{
+    width: 95%;
+    border-radius: 7px;
+    border: none;outline: none;
+    background-color: #0d6efd;
+    height: 40px;
+}
+#tastiera{
+    width: 99%;
+    height: 37rem;
+    background-color: rgb(238, 238, 238);
+    margin: 10px -5px;
+    display: flex;flex-direction: row;flex-wrap: wrap;justify-content: center;
+}
+.tasto {
+    width: 35px;height: 35px;display: flex;justify-content: center;align-items: center;background-color:#0d6efd;
+    margin: 5px;cursor: pointer;
+
+}
+.btn{
+    margin-left: -10px;
+}
+#right{
+    width: 70%;
+    height: 100%;
+ 
+}
+.numbers{
+    width: 100%;
+    height: 10rem;
+    display: flex;flex-direction: row;justify-content: space-around;
+    align-items: center;
+}
+.numeriDaRicordare{
+    width: 80%;
+    height: 5rem ;
+    background-color: #0d6efd;display: flex;justify-content: center;align-items: center;
+}
+.numeroGenerato{
+    margin: 2px ;background-color: rgb(63, 9, 63);width: 40px;height: 40px;
+    font-size: 1.3rem;
+    display: flex;align-items: center;justify-content: center;color: white;
+    cursor: pointer;
+}
+.orologio{
+    width: 5rem;
+    height: 5rem;
+    background-color: #0d6efd;
+    display: flex;align-items: center;justify-content: center;border-radius: 50%;
+    color: white;
+}
+.vincitore{
+    width: 95%;margin-left: 10px;
+    height: 40rem; background-color: #0d6efd;
+}
